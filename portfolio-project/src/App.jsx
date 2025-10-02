@@ -1,11 +1,11 @@
-import { useState } from "react"
-import "./App.css"
-import { LoadingScreen } from "./components/LoadingScreen"
-import "./index.css"
-import { Navbar } from "./components/Navbar"
+import { useState } from "react";
+import "./App.css";
+import { LoadingScreen } from "./components/LoadingScreen";
+import "./index.css";
+import { Navbar } from "./components/Navbar";
 
 function App() {
-  const [isLoading, setIsLoading] = useState(true)
+  const [isLoading, setIsLoading] = useState(true);
 
   return (
     <>
@@ -18,7 +18,7 @@ function App() {
         <Navbar />
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
