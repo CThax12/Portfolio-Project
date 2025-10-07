@@ -1,12 +1,13 @@
 import { useState } from "react";
 import "./App.css";
-import { LoadingScreen } from "./components/LoadingScreen";
 import "./index.css";
+import { LoadingScreen } from "./components/LoadingScreen";
 import { Navbar } from "./components/Navbar";
+import { MobileMenu } from "./components/MobileMenu";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
-  const [menuOpen, setMenuOpen] = useState(true);
+  const [menuOpen, setMenuOpen] = useState(false); // Start closed!
 
   return (
     <>
@@ -17,6 +18,7 @@ function App() {
         } bg-black text-gray-100`}
       >
         <Navbar menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+        <MobileMenu menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
       </div>
     </>
   );

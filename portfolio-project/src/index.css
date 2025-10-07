@@ -8,6 +8,10 @@ html, body {
   color: #f3f4f6;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 @keyframes blink {
   0%, 100% {
     opacity: 1;
