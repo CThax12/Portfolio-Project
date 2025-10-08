@@ -12,18 +12,62 @@ export const MobileMenu = ({ menuOpen, setMenuOpen }) => {
       <button
         className="absolute top-6 right-6 text-white text-4xl focus:outline-none"
         onClick={() => setMenuOpen(false)}
+        aria-label="Close Menu"
       >
         &times;
       </button>
-
-      {menuOpen && (
-        <nav className="flex flex-col space-y-8 text-2xl">
-          <a href="#home" onClick={() => setMenuOpen(false)}>Home</a>
-          <a href="#about" onClick={() => setMenuOpen(false)}>About</a>
-          <a href="#projects" onClick={() => setMenuOpen(false)}>Projects</a>
-          <a href="#contact" onClick={() => setMenuOpen(false)}>Contact</a>
-        </nav>
-      )}
+      <a
+        href="#home"
+        onClick={() => setMenuOpen(false)}
+        className={`font-2-xl font-semibold text-white my-4 transform transition-transform duration-300
+                ${
+                  menuOpen
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 transition-y-5"
+                }
+                `}
+      >
+        Home
+      </a>
+      <a
+        className={`font-2-xl font-semibold text-white my-4 transform transition-transform duration-300
+                ${
+                  menuOpen
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 transition-y-5"
+                }
+                `}
+        href="#about"
+        onClick={() => setMenuOpen(false)}
+      >
+        About
+      </a>
+      <a
+        className={`font-2-xl font-semibold text-white my-4 transform transition-transform duration-300
+                ${
+                  menuOpen
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 transition-y-5"
+                }
+                `}
+        href="#projects"
+        onClick={() => setMenuOpen(false)}
+      >
+        Projects
+      </a>
+      <a
+        className={`font-2-xl font-semibold text-white my-4 transform transition-transform duration-300
+                ${
+                  menuOpen
+                    ? "opacity-100 translate-y-0"
+                    : "opacity-0 transition-y-5"
+                }
+                `}
+        href="#contact"
+        onClick={() => setMenuOpen(false)}
+      >
+        Contact
+      </a>
     </div>
   );
 };

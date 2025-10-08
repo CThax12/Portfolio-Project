@@ -12,6 +12,10 @@ body {
   overflow-x: hidden;
 }
 
+html {
+  scrollbar-gutter: stable;
+}
+
 @keyframes blink {
   0%, 100% {
     opacity: 1;
