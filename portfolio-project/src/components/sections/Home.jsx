@@ -7,7 +7,7 @@ export const Home = () => {
       id="home"
       className="min-h-screen flex items-center  justify-center relative"
     >
-      <div className="text-center z-10 px-4 pt-12">
+      <div className="text-center z-10 px-4 pt-8">
         <RevealOnScroll>
           <h1 className="text-4xl md:text-6xl font-bold mb-4 bg-gradient-to-r from-blue-500 to-cyan-400 bg-clip-text leading-right text-transparent">
             Hey, I'm Connor Thaxton
