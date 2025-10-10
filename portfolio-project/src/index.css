@@ -43,3 +43,15 @@ html {
     animation: blink 1.0s step-end infinite;
   }
 }
+
+.reveal {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+
+.reveal.Visible {
+  opacity: 1;
+  transform: translateY(0);
+
+}
